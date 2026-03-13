@@ -193,7 +193,7 @@ def _transit_accessibility_scores(locations: pd.DataFrame) -> np.ndarray:
     if "distance_to_transit_stop" not in locations.columns:
         return np.zeros(len(locations))
 
-    dists = locations["distance_to_transit_stop"].values.copy()
+    dists = np.array(locations["distance_to_transit_stop"].values, dtype=float)
     # Cap at 3 km — anything farther is effectively 0
     dists = np.clip(dists, 0, 3000)
     scores = 1 - (dists / 3000)
