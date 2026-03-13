@@ -1,0 +1,42 @@
+# Streamlit secrets (contains API keys)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node (winnipeg-stride)
+node_modules/
+*.tgz
+
+# Expo
+.expo/
+
+# Generated output
+output/
+
+# Archives
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
